@@ -3,49 +3,28 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="ChemXploreML"
+    img="/cxml.png"
+    desc="A novel, high-performance, general-purpose desktop application for chemists to apply machine learning techniques. Features: chemical embeddings, ML algorithms, job scheduling, etc."
+    url="https://aravindhnivas.github.io/ChemXploreML-docs"
     badge="NEW"
   />
   <div class="divider my-0"></div>
+  <HorizontalCard title="SAAGADB" img="/post_img.webp" desc="Open-source database and API for microwave spectroscopy data. Used by the McGuire group at MIT." url="http://herzberg.mit.edu" />
+  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
+    title="FELionGUI"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
-
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    desc="GUI for spectroscopic data analysis, integrated at FELIX facility, Radboud University."
+    url="https://felion-docs.vercel.app"
     badge="FOSS"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  <HorizontalCard title="Astro-Web" img="/post_img.webp" desc="Unified web interface for astrochemistry resources (Astromol, UCLCHEM, etc.)." url="https://astrochemistry.streamlit.app" />
 </BaseLayout>
